@@ -1,0 +1,17 @@
+.button {
+    width: 153px;
+    height: 32px;
+    border-radius: 5px;
+    background: rgb(199, 1, 1);
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    &_main {
+        margin-top: 68px;
+        width: 300px;
+        height: 50px;
+        font-size: 16px;
+    }
+}
