@@ -2,6 +2,9 @@
     .container {
         padding: 0 20px;
     }
+    .title_left {
+        font-size: 33px;
+    }
 }
 @media (max-width: 767px) {
     .header {
@@ -31,6 +34,9 @@
         &__item {
             padding: 0 5px;
         }
+    }
+    .title_left {
+        font-size: 24px;
     }
 }
 @media (max-width: 575px) {
@@ -91,5 +97,17 @@
             margin-top: 10px;
             height: unset;
         }
+    }
+    .title_left {
+        font-size: 13px;
+        text-align: center;
+    }
+    .consultation__descr {
+        text-align: center;
+        font-size: 15px;
+    }
+    .feed-form {
+        width: 280px;
+        margin: 36px auto 0;
     }
 }
