@@ -1,0 +1,37 @@
+.review {
+    padding-bottom: 49px;
+    &__block {
+        margin-top: 60px;
+        display: flex;
+    }
+
+    &__thumb {
+        margin-right: 50px;
+        border-radius: 100%;
+        width: 169px;
+        height: 169px;
+    }
+
+    &__item {
+        margin-right: 20px;
+    }
+
+    &__title {
+        color: rgb(13, 13, 13);
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    &__subtitle {
+        color: rgb(100, 100, 100);
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    &__text {
+        margin-top: 50px;
+        color: rgb(13, 13, 13);
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
