@@ -29,3 +29,51 @@
         }
     }
 }
+@media (max-width: 1119px) {
+    .carousel {
+        .prev {
+            left: 20px;
+        }
+        .next {
+            right: 20px;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .carousel {
+        &__inner {
+            display: flex;
+            align-items: center;
+        }
+        padding: 30px 0;
+        .tns-inner {
+            img {
+                width: 620px;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .carousel {
+        .tns-inner {
+            img {
+                width: 430px;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .carousel {
+        .prev {
+            left: 5px;
+        }
+        .next {
+            right: 5px;
+        }
+        .tns-inner {
+            img {
+                width: 225px;
+            }
+        }
+    }
+}
