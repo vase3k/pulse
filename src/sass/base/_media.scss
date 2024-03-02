@@ -5,6 +5,12 @@
     .title_left {
         font-size: 33px;
     }
+    .catalog__content_active {
+        justify-content: space-evenly;
+    }
+    .catalog-item {
+        margin: 0 10px 20px;
+    }
 }
 @media (max-width: 767px) {
     .header {
@@ -37,6 +43,9 @@
     }
     .title_left {
         font-size: 24px;
+    }
+    .catalog__tab {
+        font-size: 16px;
     }
 }
 @media (max-width: 575px) {
@@ -109,5 +118,13 @@
     .feed-form {
         width: 280px;
         margin: 36px auto 0;
+    }
+    .catalog {
+        &__tabs {
+            flex-direction: column;
+        }
+        &__tab {
+            margin-bottom: 10px;
+        }
     }
 }
