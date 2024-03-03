@@ -3,6 +3,7 @@
     width: 300px;
     display: flex;
     flex-direction: column;
+    transition: all 1s;
     input {
         height: 50px;
         border-radius: 5px;
@@ -19,5 +20,11 @@
     }
     &_mt25 {
         margin-top: 25px;
+    }
+}
+@media (max-width: 575px) {
+    .feed-form {
+        width: 280px;
+        margin: 36px auto 0;
     }
 }
