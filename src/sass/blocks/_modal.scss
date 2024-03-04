@@ -44,6 +44,14 @@
         min-height: 140px;
         transition: all 1s;
     }
+    .error {
+        border: 1px solid red;
+    }
+    label.error {
+        border: none;
+        text-align: center;
+        margin-bottom: 10px;
+    }
 }
 
 #consultation,

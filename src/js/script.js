@@ -81,5 +81,63 @@ $(document).ready(function () {
         })
     });
 
+    // $('#consultation-form').validate();
+    // $('#consultation .feed-form').validate({
+    //     rules: {
+    //         name: {
+    //             required: true,
+    //             minlength: 2
+    //         },
+    //         phone: "required",
+    //         email: {
+    //             required: true,
+    //             email: true
+    //         }
+    //     },
+    //     messages: {
+    //         name: {
+    //             required: 'enter your name',
+    //             minlength: jQuery.validator.format('at least {0} characters required')
+    //         },
+    //         phone: "введите номер",
+    //         email: {
+    //             required: "введите почту",
+    //             email: "не правильныя почта"
+    //         }
+    //     }
+    // });
+    // $('#order .feed-form').validate();
+
+    function valideForms(form) {
+        $(form).validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: {
+                    required: 'enter your name',
+                    minlength: jQuery.validator.format('at least {0} characters required')
+                },
+                phone: "введите номер",
+                email: {
+                    required: "введите почту",
+                    email: "не правильныя почта"
+                }
+            }
+        });
+    }
+    valideForms('#consultation-form');
+    valideForms('#consultation .feed-form');
+    valideForms('#order .feed-form');
+
+
 });
 
