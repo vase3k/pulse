@@ -73,7 +73,7 @@ $(document).ready(function () {
 
     //modal
     $('[data-modal=consultation]').on('click', () => $('.overlay, #consultation').fadeIn("slow"));
-    $('.modal__close').on('click', () => $('.overlay, #consultation, #order').fadeOut("slow"));
+    $('.modal__close').on('click', () => $('.overlay, #consultation, #order, #thanks').fadeOut("slow"));
     $('.button_mini').each(function (i) {
         $(this).on('click', function () {
             $("#order .modal__descr").text($('.catalog-item__subtitle').eq(i).text());
