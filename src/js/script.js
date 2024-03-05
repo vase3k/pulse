@@ -138,6 +138,6 @@ $(document).ready(function () {
     valideForms('#consultation .feed-form');
     valideForms('#order .feed-form');
 
-
+    $('input[name=phone]').mask("+375 (99) 999-9999")
 });
 
