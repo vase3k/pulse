@@ -153,6 +153,12 @@
                     top: 6px;
                 }
             }
+            li:last-child {
+                position: static;
+                &:before {
+                    content: none;
+                }
+            }
         }
         &__back {
             position: absolute;
