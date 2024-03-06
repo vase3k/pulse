@@ -30,7 +30,7 @@ gulp.task('styles', function () {
 
 gulp.task('html', () => {
     return gulp.src('src/*.html')
-        .pipe(htmlmin({ collapseWhitespaces: true }))
+        .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest('dist/'))
 });
 
@@ -45,27 +45,29 @@ gulp.task('script', () => {
 });
 
 gulp.task('fonts', () => {
-    return gulp.src('src/fonts/**/*.js')
+    return gulp.src('src/fonts/**/*')
         .pipe(gulp.dest('dist/fonts'))
 });
 
 gulp.task('icons', () => {
-    return gulp.src('src/icons/**/*.js')
+    return gulp.src('src/icons/**/*')
+        .pipe(imagemin())
         .pipe(gulp.dest('dist/icons'))
 });
 
 gulp.task('mailer', () => {
-    return gulp.src('src/mailer/**/*.js')
+    return gulp.src('src/mailer/**/*')
         .pipe(gulp.dest('dist/mailer'))
 });
 
 gulp.task('images', () => {
-    return gulp.src('src/img/**/*.js')
+    return gulp.src('src/img/**/*')
         .pipe(imagemin())
         .pipe(gulp.dest('dist/img'))
 });
 
 
 gulp.task('default', gulp.parallel(
-    'watch', 'server', 'styles', 'scripts', 'fonts', 'icons', 'mailer', 'minify'));
+    'server', 'styles', 'html', 'watch', 'script', 'fonts', 'icons', 'mailer', 'images'
+));
 
